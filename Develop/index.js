@@ -85,11 +85,22 @@ function init() {
         data.licenseBadge = "";
         response.licenses.map(license => {
             console.log(license);
+            
             if(license==="MIT License"){
                 data.licenseBadge += "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
             } else if (license==="GNU GPLv3"){
                 data.licenseBadge += "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
-            }
+            } else if (license==="GNU AGPLv3"){
+                data.licenseBadge += "[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)";
+            } else if (license==="GNU LGPLv3"){
+                data.licenseBadge += "[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)";
+            }  else if (license==="Mozilla Public License 2.0"){
+                data.licenseBadge += "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
+            }  else if (license==="Boost Software License 1.0"){
+                data.licenseBadge += "[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)";
+            } else if (license==="The Unlicense"){
+                data.licenseBadge += "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
+            } else (data.licenseBadge = "There are no licenses for this project.")
         });
         
    

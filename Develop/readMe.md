@@ -1,8 +1,8 @@
-#  
+# Readme Generator 
 [![NPM Version](https://img.shields.io/npm/v/npm.svg?style=flat)]()
 ## Description  
 
-
+Generating a readme.
 --------------
 ## Table of Contents
 - [Installation](#Installation)
@@ -17,26 +17,26 @@ true
 ## Installation
 **These are the installation requirement for this project.**
 
-
+None
 --------------
 ## Licenses
 **These are the licenses needed for this project.**
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 --------------
 ## Contributing
 **These are the Contributing parties to this project.**
 
-true
+false
 --------------
 ## Tests
 **Below are the tests performed on this project, and their descriptions.**
 
-
+No
 --------------
 ## Questions
 
-true
+false
 --------------
 ## github-profile-avatar
 ![profile-picture](undefined=250x)

@@ -77,9 +77,24 @@ function init() {
         questions
     ).then(function (response) {
         console.log("user input" + response);
-
+   
         let data = { ...response }
         data.avatar = api(response.username);
+        console.log(response.licenses);
+        
+        data.licenseBadge = "";
+        response.licenses.map(license => {
+            console.log(license);
+            if(license==="MIT License"){
+                data.licenseBadge += "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+            } else if (license==="GNU GPLv3"){
+                data.licenseBadge += "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+            }
+        });
+        
+   
+        console.log(data.licenseBadge);
+        
         console.log("combined user response & GitHub image" + data);
         writeToFile("readMe.md", generateMarkdown(data))
 

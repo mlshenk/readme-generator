@@ -24,7 +24,7 @@ ${data.installation}
 ## Licenses
 **These are the licenses needed for this project.**
 
-${data.licenses}
+${data.licenseBadge}
 --------------
 ## Contributing
 **These are the Contributing parties to this project.**

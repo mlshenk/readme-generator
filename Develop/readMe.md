@@ -1,8 +1,8 @@
-# Readme generator 
+# Project stuf 
 [![NPM Version](https://img.shields.io/npm/v/npm.svg?style=flat)]()
 ## Description  
 
-Generate readme file.
+stuffed
 --------------
 ## Table of Contents
 - [Installation](#Installation)
@@ -17,7 +17,7 @@ true
 ## Installation
 **These are the installation requirement for this project.**
 
-Open and enjoy
+N/A
 --------------
 ## Licenses
 **These are the licenses needed for this project.**
@@ -32,7 +32,7 @@ false
 ## Tests
 **Below are the tests performed on this project, and their descriptions.**
 
-n
+No
 --------------
 ## Questions
 

@@ -17,8 +17,8 @@ const questions = [
     },
     {
         type: "input",
-        message: "What is your LinkedIn username?",
-        name: "linkedin"
+        message: "What is your email?",
+        name: "email"
     },
     {
         type: "input",

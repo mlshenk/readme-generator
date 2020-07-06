@@ -1,8 +1,8 @@
-# Project stuf 
+# Project 1 
 [![NPM Version](https://img.shields.io/npm/v/npm.svg?style=flat)]()
 ## Description  
 
-stuffed
+finished project
 --------------
 ## Table of Contents
 - [Installation](#Installation)
@@ -32,7 +32,7 @@ false
 ## Tests
 **Below are the tests performed on this project, and their descriptions.**
 
-No
+None.
 --------------
 ## Questions
 

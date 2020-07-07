@@ -43,12 +43,12 @@ const questions = [
     },
     {
         type: "input",
-        message: "Please enter any other contributing parties, if any, for this project.",
+        message: "Please enter any other contributing parties, if any, for this project. If there are none, enter 'N/A'",
         name: "contributing"
     },
     {
         type: "input",
-        message: "Did you perform any tests on your project? If so, please describe them.",
+        message: "Please enter any tests that were performed on this project? If none were performed, enter 'N/A'",
         name: "tests"
     },
     {

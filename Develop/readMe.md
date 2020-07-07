@@ -22,7 +22,7 @@ Visit my GitHub page (https://github.com/mlshenk/) and clone this repo. Then, in
 ## Licenses
 **These are the licenses needed for this project.**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 --------------
 ## Contributing
 **Below are the Contributing parties to this project, if any.**

@@ -40,7 +40,7 @@ ${data.tests}
 
 ${data.questions}
 --------------
-## github-profile-avatar
+## GitHub Profile Avatar
 ![profile-picture](${data.avatar}=250x)
 `;
 }

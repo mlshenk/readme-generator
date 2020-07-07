@@ -8,7 +8,7 @@ var myData = {
     title: "Welcome to my readme",
     name: "Your name"
 }
-// array of questions for user
+// Array of questions for user
 const questions = [
     {
         type: "input",
@@ -42,8 +42,8 @@ const questions = [
         choices: ["GNU AGPLv3", "GNU GPLv3", "GNU LGPLv3", "Mozilla Public License 2.0", "MIT License", "Boost Software License 1.0", "The Unlicense"]
     },
     {
-        type: "confirm",
-        message: "Were there any other Contributing parties?",
+        type: "input",
+        message: "Please enter any other contributing parties, if any, for this project.",
         name: "contributing"
     },
     {
@@ -58,7 +58,7 @@ const questions = [
     }
 ];
 
-// function to write README file
+// Function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, function (error) {
         if (error) throw error;
@@ -66,20 +66,18 @@ function writeToFile(fileName, data) {
     })
 }
 
-// function to initialize program
+// Function to initialize program
 function init() {
     inquirer.prompt(
         questions
     ).then(function (response) {
-        // console.log("user input" + response);
+     
    
         let data = { ...response }
-       
-        // console.log(response.licenses);
-        
+
+        // Available License Badges
         data.licenseBadge = "";
         response.licenses.map(license => {
-            // console.log(license);
             
             if(license==="MIT License"){
                 data.licenseBadge += "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
@@ -100,7 +98,7 @@ function init() {
         
    
         console.log(data.licenseBadge);
-        
+        // Displays github profile picture
         api(response.username)
         .then(apiResp => {
             data.avatar = apiResp.data.avatar_url;
@@ -108,8 +106,7 @@ function init() {
             writeToFile("readMe.md", generateMarkdown(data));
         });
     })
-    // writeToFile("readMe.md", generateMarkdown(myData));
 }
 
-// function call to initialize program
+// Function call to initialize program
 init();

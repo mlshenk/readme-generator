@@ -2,7 +2,7 @@
 [![NPM Version](https://img.shields.io/npm/v/npm.svg?style=flat)]()
 ## Description  
 
-Generate a dynamic Readme markdown file.
+This project was to create a dynamic Readme Generator that will facilitate the creation of Readme files for future projects. 
 --------------
 ## Table of Contents
 - [Installation](#Installation)
@@ -17,22 +17,22 @@ true
 ## Installation
 **These are the installation requirement for this project.**
 
-npm install
+Visit my GitHub page (https://github.com/mlshenk/) and clone this repo. Then, install 'npm inquirer'.
 --------------
 ## Licenses
 **These are the licenses needed for this project.**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 --------------
 ## Contributing
-**These are the Contributing parties to this project.**
+**Below are the Contributing parties to this project, if any.**
 
-false
+None
 --------------
 ## Tests
 **Below are the tests performed on this project, and their descriptions.**
 
-no 
+No
 --------------
 ## Questions
 

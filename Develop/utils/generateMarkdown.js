@@ -27,7 +27,7 @@ ${data.installation}
 ${data.licenseBadge}
 --------------
 ## Contributing
-**These are the Contributing parties to this project.**
+**Below are the Contributing parties to this project, if any.**
 
 ${data.contributing}
 --------------

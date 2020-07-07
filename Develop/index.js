@@ -17,11 +17,6 @@ const questions = [
     },
     {
         type: "input",
-        message: "What is your email?",
-        name: "email"
-    },
-    {
-        type: "input",
         message: "What is the title of your project?",
         name: "title"
     },
@@ -57,8 +52,8 @@ const questions = [
         name: "tests"
     },
     {
-        type: "confirm",
-        message: "Would you like to receive questions about your project?",
+        type: "input",
+        message: "Please enter your email address if you would like to receive questions about your project.",
         name: "questions"
     }
 ];
@@ -76,15 +71,15 @@ function init() {
     inquirer.prompt(
         questions
     ).then(function (response) {
-        console.log("user input" + response);
+        // console.log("user input" + response);
    
         let data = { ...response }
-        data.avatar = api(response.username);
-        console.log(response.licenses);
+       
+        // console.log(response.licenses);
         
         data.licenseBadge = "";
         response.licenses.map(license => {
-            console.log(license);
+            // console.log(license);
             
             if(license==="MIT License"){
                 data.licenseBadge += "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
@@ -106,9 +101,12 @@ function init() {
    
         console.log(data.licenseBadge);
         
-        console.log("combined user response & GitHub image" + data);
-        writeToFile("readMe.md", generateMarkdown(data))
-
+        api(response.username)
+        .then(apiResp => {
+            data.avatar = apiResp.data.avatar_url;
+            console.log("combined user response & GitHub image" + data.avatar);
+            writeToFile("readMe.md", generateMarkdown(data));
+        });
     })
     // writeToFile("readMe.md", generateMarkdown(myData));
 }
